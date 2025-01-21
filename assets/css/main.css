@@ -564,6 +564,10 @@ section,
   margin: 0;
   font-size: 64px;
   font-weight: 700;
+  text-shadow:  10px -10px 2px #00abff75,
+                20px -20px 2px #00abff50,
+                30px -30px 2px #00abff25,
+                40px -40px 3px #00abff25;
 }
 
 .hero p {
