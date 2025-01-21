@@ -609,6 +609,10 @@ section,
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
+  text-shadow:  5px -5px 2px #0175ad,
+                10px -10px 3px #0175ad,
+                15px -15px 5px #0175ad;
+                /* 20px -20px 2px #00abff; */
 }
 
 .about .content ul {
@@ -637,6 +641,21 @@ section,
 .about .content p {
   margin-bottom: 24px; 
   max-width: 480px;
+}
+
+.software-list {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+.software-list li {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 12px; /* Add space between list items */
+}
+
+.software-list img {
+  margin-right: 12px; /* Add space between image and text */
 }
 
 /*--------------------------------------------------------------
