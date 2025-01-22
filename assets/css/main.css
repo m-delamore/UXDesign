@@ -169,9 +169,9 @@ h6 {
 
 @media (max-width: 1199px) {
   .header {
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    width: 300px;
+    width: 100px;
     left: -100%;
   }
 }
@@ -905,6 +905,7 @@ section,
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 12px;
 }
 .services .service-item {
   /* background-color: var(--surface-color); */
