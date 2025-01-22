@@ -170,6 +170,7 @@ h6 {
 @media (max-width: 1199px) {
   .header {
     /* background-color: var(--background-color); */
+    background: color-mix(in srgb, var(--nav-color), transparent 72%);
     border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     width: 100px;
     left: -100%;
@@ -193,7 +194,7 @@ h6 {
 
 .header .header-toggle {
   color: var(--contrast-color);
-  background-color: var(--accent-color);
+  background-color: var(--nav-color);
   font-size: 22px;
   display: flex;
   align-items: center;
@@ -211,7 +212,7 @@ h6 {
 
 .header .header-toggle:hover {
   color: var(--contrast-color);
-  background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+  background-color: color-mix(in srgb, var(--nav-color) 90%, white 15%);
 }
 
 /*--------------------------------------------------------------
@@ -231,7 +232,8 @@ h6 {
 
 .navmenu a,
 .navmenu a:focus {
-  color: var(--nav-color);
+  color: #ffffff; 
+  /* var(--nav-color); */
   font-family: var(--nav-font);
   display: flex;
   align-items: center;
@@ -239,7 +241,8 @@ h6 {
   margin-bottom: 8px;
   font-size: 15px;
   border-radius: 50px;
-  background: color-mix(in srgb, var(--default-color), transparent 92%);
+  background:  var(--nav-color);
+  /* color-mix(in srgb, var(--nav-color), transparent 52%); */
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -274,7 +277,8 @@ h6 {
 .navmenu .active:focus,
 .navmenu li:hover>a {
   color: var(--contrast-color);
-  background: var(--nav-hover-color);
+  background: #05496d; 
+  /* var(--nav-hover-color); */
 }
 
 .navmenu a:hover,
@@ -395,7 +399,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: var(--nav-color);
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -409,7 +413,8 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  /* background-color: color-mix(in srgb, var(--accent-color), transparent 20%); */
+  background-color: color-mix(in srgb, var(--nav-color) 90%, white 15%);
   color: var(--contrast-color);
 }
 
