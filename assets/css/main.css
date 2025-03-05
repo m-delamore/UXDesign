@@ -241,8 +241,6 @@ h6 {
   margin-bottom: 8px;
   font-size: 15px;
   border-radius: 50px;
-  background:  var(--nav-color);
-  /* color-mix(in srgb, var(--nav-color), transparent 52%); */
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -269,6 +267,14 @@ h6 {
   .navmenu a span,
   .navmenu a:focus span {
     display: none;
+  }
+}
+
+@media (max-width:1199px)
+{
+  .navmenu a,
+  .navmenu a:focus {
+    background: color-mix(in srgb, var(--nav-color), transparent 32%);
   }
 }
 
@@ -399,7 +405,8 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--nav-color);
+  /* background-color: var(--nav-color); */
+  background: color-mix(in srgb, var(--nav-color), transparent 32%);
   width: 44px;
   height: 44px;
   border-radius: 50px;
