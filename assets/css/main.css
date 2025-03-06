@@ -360,6 +360,27 @@ h6 {
   padding-top: 5px;
 }
 
+.footer .btn-with-icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #05496d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer .btn-with-icon img {
+  margin-right: 10px; /* Add space between the image and the text */
+}
+
+.footer .btn-with-icon:hover {
+  background-color: #0056b3;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
