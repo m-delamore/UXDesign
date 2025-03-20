@@ -797,7 +797,7 @@ section,
 
 .container {
   max-width: 100%; /* Ensure the container spans the full width by default */
-  padding: 0; /* Remove padding */
+  padding: 0;
 }
 .security img {
   pointer-events: none;
@@ -814,13 +814,12 @@ section,
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: absolute; /* Position the content inside the container */
-  top: 0; /* Adjust the vertical position */
-  left: 0; /* Adjust the horizontal position */
-  z-index: 10; /* Ensure it appears above the image */
-  width: 50%; /* Set the width of the container */
-  height: 100%; /* Set the height of the container */
-  /* border: 5px solid #C8C2AE; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 50%;
+  height: 100%;
   padding: 5%;
 }
 
@@ -847,13 +846,33 @@ section,
 }
 
 .prototype-space {
-  position: absolute; /* Position the content inside the container */
-  top: 0; /* Adjust the vertical position */
-  left: 50%; /* Adjust the horizontal position */
-  z-index: 10; /* Ensure it appears above the image */
-  width: 50%; /* Set the width of the container */
-  height: 100%; /* Set the height of the container */
-  /* border: 5px solid #C8C2AE; */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 10;
+  width: 50%;
+  height: 100%;
+}
+
+.presso-btn {
+  text-align: center;
+  padding: 24px 0 48px 0;
+}
+
+.presso-btn .btn {
+  padding: 10px 20px;
+  font-family: "Nunito", Helvetica;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: rgba(200, 194, 174, 0.5);
+  border-color: #C8C2AE;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.presso-btn .btn:hover {
+  background-color: rgba(28, 37, 65, 0.5); /* Darker blue on hover */
 }
 
 /* Override for larger screens (e.g., desktops) */
@@ -864,13 +883,9 @@ section,
   }
 
   .container.navpadding {
-    padding-left: 12px !important; /* Add padding to the left */
-    padding-right: 12px !important; /* Add padding to the right */
+    padding-left: 12px !important;
+    padding-right: 12px !important;
   }
-
-  /* .prototype-space{
-    border: 5px solid #ff002b;
-  } */
 
   .prototype-text h1 {
     font-size:28px;
@@ -882,6 +897,10 @@ section,
   
   .prototype-text li {
     font-size:12px;
+  }
+
+  .presso-btn .btn {
+    font-size: 16px;
   }
 }
 
@@ -891,13 +910,9 @@ section,
   }
 
   .container.navpadding {
-    padding-left: 12px !important; /* Add padding to the left */
-    padding-right: 12px !important; /* Add padding to the right */
+    padding-left: 12px !important;
+    padding-right: 12px !important;
   }
-
-  /* .prototype-space{
-    border: 5px solid #ff002b;
-  } */
 
   .prototype-text h1 {
     font-size:28px;
@@ -910,6 +925,10 @@ section,
   .prototype-text li {
     font-size:12px;
   }
+
+  .presso-btn .btn {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -918,13 +937,9 @@ section,
   }
 
   .container.navpadding {
-    padding-left: 24px !important; /* Add padding to the left */
-    padding-right: 24px !important; /* Add padding to the right */
+    padding-left: 24px !important;
+    padding-right: 24px !important;
   }
-
-  /* .prototype-space{
-    border: 5px solid #ff002b;
-  } */
 
   .prototype-text h1 {
     font-size:32px;
@@ -937,6 +952,10 @@ section,
   .prototype-text li {
     font-size:12px;
   }
+
+  .presso-btn .btn {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -945,13 +964,9 @@ section,
   }
 
   .container.navpadding {
-    padding-left: 48px !important; /* Add padding to the left */
-    padding-right: 48px !important; /* Add padding to the right */
+    padding-left: 48px !important;
+    padding-right: 48px !important;
   }
-
-  /* .prototype-space{
-    border: 5px solid #bba800;
-  } */
 
   .prototype-text h1 {
     font-size:42px;
@@ -964,6 +979,10 @@ section,
   .prototype-text li {
     font-size:16px;
   }
+
+  .presso-btn .btn {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -972,13 +991,9 @@ section,
   }
 
   .container.navpadding {
-    padding-left: 48px !important; /* Add padding to the left */
-    padding-right: 48px !important; /* Add padding to the right */
+    padding-left: 48px !important;
+    padding-right: 48px !important;
   }
-
-  /* .prototype-space{
-    border: 5px solid #00c3ff;
-  } */
 
   .prototype-text h1 {
     font-size:48px;
@@ -991,6 +1006,10 @@ section,
   .prototype-text li {
     font-size:18px;
   }
+
+  .presso-btn .btn {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -999,13 +1018,9 @@ section,
   }
 
   .container.navpadding {
-    padding-left: 96px !important; /* Add padding to the left */
-    padding-right: 96px !important; /* Add padding to the right */
+    padding-left: 96px !important;
+    padding-right: 96px !important;
   }
-
-  /* .prototype-space{
-    border: 5px solid #00ff00;
-  } */
 
   .prototype-text h1 {
     font-size:64px;
@@ -1017,5 +1032,9 @@ section,
   
   .prototype-text li {
     font-size:24px;
+  }
+
+  .presso-btn .btn {
+    font-size: 24px;
   }
 }
