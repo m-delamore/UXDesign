@@ -810,6 +810,17 @@ section,
   -webkit-user-drag: none;
 }
 
+.maze {
+  background-color: #1C2541;
+}
+
+.maze p {
+  font-family: "Lato", Helvetica;
+  font-weight: 400;
+  color:#ffffff;
+  font-size:24px;
+}
+
 #prototype {
   position: relative;
   height:800px;
@@ -875,6 +886,8 @@ section,
   border-color: #C8C2AE;
   border-radius: 24px;
   transition: background-color 0.3s ease;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .presso-btn .btn:hover {
@@ -908,11 +921,15 @@ section,
   .presso-btn .btn {
     font-size: 16px;
   }
+
+  .maze p {
+    font-size:12px;
+  }
 }
 
 @media (min-width: 576px) {
   .container {
-    max-width: 720px; /* Set max width for tablets */
+    max-width: 720px;
   }
 
   .container.navpadding {
@@ -934,6 +951,10 @@ section,
 
   .presso-btn .btn {
     font-size: 16px;
+  }
+
+  .maze p {
+    font-size:12px;
   }
 }
 
@@ -962,6 +983,10 @@ section,
   .presso-btn .btn {
     font-size: 20px;
   }
+
+  .maze p {
+    font-size:12px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -988,6 +1013,10 @@ section,
 
   .presso-btn .btn {
     font-size: 20px;
+  }
+
+  .maze p {
+    font-size:16px;
   }
 }
 
@@ -1016,6 +1045,10 @@ section,
   .presso-btn .btn {
     font-size: 24px;
   }
+
+  .maze p {
+    font-size:18px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -1043,4 +1076,48 @@ section,
   .presso-btn .btn {
     font-size: 24px;
   }
+
+  .maze p {
+    font-size:24px;
+  }
+}
+
+/* Pop-up container (hidden by default) */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Ensure it appears above all other elements */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pop-up content box */
+.popup-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+}
+
+/* OK button styling */
+.popup-content .btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #017D83;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup-content .btn:hover {
+  background-color: #015f63;
 }

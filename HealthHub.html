@@ -64,6 +64,13 @@
     </div>
   </header>
 
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <p>Best viewed in Landscape mode, or use larger screens like tablets and monitors.</p>
+      <button id="popup-ok" class="btn btn-primary">OK</button>
+    </div>
+  </div>
+
   <main class="main">
 
     <div class="container px-0">
@@ -106,6 +113,11 @@
         </div>
         <div id="test" class="col-12"> <!-- Full-width column -->
           <img src="assets/img/healthhub/13_UsabilityTest.png" class="img-fluid" data-aos="fade-in">
+        </div>
+        <div class="col-12 maze presso-btn">
+          <p>Try out the usability tests with the links below.</p>
+          <a href="https://t.maze.co/307711584" class="btn btn-primary">Book Appointment</a>
+          <a href="https://t.maze.co/307704190" class="btn btn-primary">Info Btn & Export All</a>
         </div>
         <div class="col-12"> <!-- Full-width column -->
           <img src="assets/img/healthhub/14_WhatsNew.png" class="img-fluid" data-aos="fade-in">
@@ -190,6 +202,31 @@
       event.preventDefault();
     });
   </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("popup");
+    const popupOkButton = document.getElementById("popup-ok");
+
+    // Function to show the pop-up when the screen width is below 720px
+    function checkScreenWidth() {
+      if (window.innerWidth < 576) {
+        popup.style.display = "flex"; // Show the pop-up
+      } else {
+        popup.style.display = "none"; // Hide the pop-up
+      }
+    }
+
+    // Close the pop-up when the OK button is clicked
+    popupOkButton.addEventListener("click", function () {
+      popup.style.display = "none";
+    });
+
+    // Check screen width on page load and resize
+    checkScreenWidth();
+    window.addEventListener("resize", checkScreenWidth);
+  });
+</script>
 
 </body>
 
